@@ -3,6 +3,7 @@
     --dark-font: #252525;
     --blueish: #00AFF5;
     --pinkish: #CE5374;
+    --transparent-pinkish: rgb(206, 83, 116, .5);
     --goldish: #A19469;
 }
 
@@ -129,12 +130,11 @@ img {
     flex-direction: column;
     list-style: none;
     text-align: center;
-    background: var(--pinkish);
+    background: var(--transparent-pinkish);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     margin: 0;
     padding: 6.5rem 0 .75rem 0;
-    opacity: .7;
 }
 
 .nav-item {
@@ -218,10 +218,6 @@ img {
     width: 100%;
 }
 
-.main-img--services {
-    height: 300px;
-}
-
 /* =========================== */
 /* ADDRESS =================== */
 
@@ -247,7 +243,6 @@ img {
 
 .container .slogan  span {
     font-family: 'Dancing Script', cursive;
-    
     font-size: 1.5rem;
     font-weight: 700;
 }
@@ -318,8 +313,104 @@ footer {
     width: 24px;
 }
 
+/* =============================================================================================================== */
+/* SERVICES-PAGE ================================================================================================= */
+/* =============================================================================================================== */
 
 
+.services-nav {
+    width: 100%;
+    background: var(--transparent-pinkish);
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 5px;;
+}
+
+
+.services-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+.service-link {
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.list-2 {
+    margin-top: 2rem;
+}
+
+.container-service {
+    text-align: center;
+}
+
+.services-img {
+    width: 100%;
+    height: 300px;
+    max-width: 500px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 3.5rem;
+    text-align: center;
+    color: var(--pinkish);
+    text-transform: capitalize;
+    font-family: 'Dancing Script', cursive;
+    border-bottom: solid 2px var(--pinkish);
+    border-top: solid 2px var(--pinkish);
+    margin: 3rem 2rem 3rem 2rem;
+}
+
+
+
+.service {
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: var(--pinkish);
+    margin: 2rem 0 0 0;
+    padding: 0 1rem;
+}
+
+.description {
+    font-weight: 300;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: .5rem;
+    padding: 0 1rem;
+}
+
+.price {
+    font-size: 1.25rem;
+    color: var(--pinkish);
+    letter-spacing: 2px;
+}
+
+.waxing {
+    margin-bottom: 5rem;
+}
+
+.waxing-list {
+    width: 90%;
+    margin: 0;
+    padding: 0;
+}
+
+.waxing-item {
+    text-align: left;
+    list-style: none;
+}
 
 
 
