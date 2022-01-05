@@ -33,7 +33,7 @@ img {
 }
 
 .container {
-    margin: 1.5rem auto;
+    margin: 1rem auto;
 }
 
 .filter-pink {
@@ -54,31 +54,36 @@ img {
     display: flex; 
     justify-content: space-between;
     position: fixed;
-    padding: 1rem 1rem 1rem 2rem;
+    padding: 1rem;
 
+}
+
+.nav-right {
+    margin-left: 1rem;
 }
 
 .logo {
-    width: 45px;
+    width: 35px;
 }
 
 .logo-txt {
+    font-size: .85rem;
     letter-spacing: 2px;
     color: var(--pinkish);
 }
 
+/* HAMBURGER ========== */
+/* ==================== */
+
 .nav-toggle {
-    padding: 2rem;
     background: transparent;
     border: 0;
     cursor: pointer;
     position: absolute;
-    right: 1em;
+    right: 0em;
     z-index: 1000;
+    padding: 1.5rem 2rem;
 }
-
-/* HAMBURGER ========== */
-/* ==================== */
 
 .hamburger {
     display: block;
@@ -225,7 +230,6 @@ img {
     font-size: 1rem;
     font-weight: 300;
     letter-spacing: 2px;
-    margin-bottom: 1rem;
     color: var(--dark-font);
     text-decoration: none;
 }
@@ -408,6 +412,7 @@ footer {
 }
 
 .waxing-item {
+    width: 100%;
     text-align: left;
     list-style: none;
 }
