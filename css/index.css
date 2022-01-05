@@ -144,7 +144,7 @@ img {
 .nav-link {
     text-decoration: none;
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 900;
     letter-spacing: 2px;
     padding: 1rem 2rem;
     color: var(--light-pink);
@@ -152,12 +152,12 @@ img {
 
 .nav-link-book {
     font-weight: 900;
-    color: #C2B399;
 }
 
 .active {
-    border-bottom: solid 1px var(--light-pink);
+    font-weight: 300;
     opacity: .5;
+    border-bottom: solid 1px var(--light-pink);
 }
 
 .nav-open .nav-list-background {
@@ -275,6 +275,7 @@ img {
     border: solid 2px var(--pinkish);
     border-radius: 5px;
     padding: .5rem 1rem;
+    margin-bottom: 5rem;
 }
 
 .section-img {
