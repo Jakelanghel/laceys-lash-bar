@@ -1,0 +1,329 @@
+:root {
+    --light-pink: #ffe6f2;
+    --dark-font: #252525;
+    --blueish: #00AFF5;
+    --pinkish: #CE5374;
+    --goldish: #A19469;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    font-family: 'Poppins', sans-serif;
+    background: var(--light-pink);
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,p {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    color: var(--dark-font);
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    margin: 1.5rem auto;
+}
+
+.filter-pink {
+    filter: brightness(0) saturate(100%) invert(51%) sepia(24%) saturate(1698%) hue-rotate(298deg) brightness(84%) contrast(90%);
+}
+
+.filter-blue {
+    filter: brightness(0) saturate(100%) invert(57%) sepia(58%) saturate(5418%) hue-rotate(168deg) brightness(105%) contrast(104%);
+}
+
+
+/* ==================== */
+/* NAV ================ */
+/* ==================== */
+
+.nav-bar {
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
+    position: fixed;
+    padding: 1rem 1rem 1rem 2rem;
+
+}
+
+.logo {
+    width: 45px;
+}
+
+.logo-txt {
+    letter-spacing: 2px;
+    color: var(--pinkish);
+}
+
+.nav-toggle {
+    padding: 2rem;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 1em;
+    z-index: 1000;
+}
+
+/* HAMBURGER ========== */
+/* ==================== */
+
+.hamburger {
+    display: block;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    background: var(--pinkish);
+    width: 30px;
+    height: 3px;
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
+}
+
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.hamburger::before { top: 10px; }
+.hamburger::after { bottom: 10px; }
+
+
+/* NAV-LIST =========== */
+/* ==================== */
+
+.nav-list-background {
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    position: absolute;
+    right: 0;
+    transform: translateX(100%);
+    top: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: transform 300ms cubic-bezier(.5, 0, .5, 1);
+    z-index: 100;
+
+}
+
+.nav-list {
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    background: var(--pinkish);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin: 0;
+    padding: 6.5rem 0 .75rem 0;
+    opacity: .7;
+}
+
+.nav-item {
+    margin-bottom: 2.5rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding: 1rem 2rem;
+    color: var(--light-pink);
+}
+
+.nav-link-book {
+    font-weight: 900;
+    color: #C2B399;
+}
+
+.active {
+    border-bottom: solid 1px var(--light-pink);
+    opacity: .5;
+}
+
+.nav-open .nav-list-background {
+    transform: translateX(0);
+}
+
+.nav-open .hamburger,
+.nav-open .hamburger::before,
+.nav-open .hamburger::after {
+    background: white;
+    
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
+.nav-open .hamburger {
+    transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-10px);
+}
+
+.nav-open .hamburger::after {
+    opacity: 0;
+}
+
+.brand {
+    margin-bottom: 25px;
+}
+
+.brand-link {
+    background: var(--light-pink);
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 3px;;
+    color: var(--pinkish);
+    border-radius: 10px;;
+}
+
+/* ==================== */
+/* MAIN =============== */
+/* ==================== */
+
+.main {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    margin-top: 6rem;
+}
+
+/* =========================== */
+/* MAIN-IMG ================== */
+
+.main-img {
+    width: 100%;
+}
+
+.main-img--services {
+    height: 300px;
+}
+
+/* =========================== */
+/* ADDRESS =================== */
+
+.address-link {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    color: var(--dark-font);
+    text-decoration: none;
+}
+
+/* =========================== */
+/* SLOGAN ==================== */
+
+.slogan {
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.container .slogan  span {
+    font-family: 'Dancing Script', cursive;
+    
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.hero-span-1 {
+    color: var(--blueish);
+}
+
+.hero-span-2 {
+    color: var(--pinkish);
+}
+
+.hero-span-3 {
+    color: var(--goldish);
+}
+
+/* =========================== */
+/* SLOGAN ==================== */
+
+.btn-container {
+    margin: 2rem 0;
+}
+
+.book-btn {
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-decoration: none;
+    color: var(--pinkish);
+    border: solid 2px var(--pinkish);
+    border-radius: 5px;
+    padding: .5rem 1rem;
+}
+
+.section-img {
+    max-width: 100%;
+}
+
+
+/* ==================== */
+/* FOOTER ============= */
+/* ==================== */
+
+footer {
+    margin-top: auto;
+}
+
+
+.footer-icons-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-end;
+}
+
+.footer-icon {
+    margin-bottom: 10px;
+    width: 15px;
+}
+
+.phone-icon {
+    width: 20px;
+}
+
+.instagram-icon {
+    width: 24px;
+}
+
+
+
+
+
+
+
+
+
+
