@@ -11,21 +11,24 @@ html, body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-    font-family: 'Poppins', sans-serif;
     background: var(--light-pink);
-    margin: 0;
-    padding: 0;
-}
-
-h1,h2,h3,p {
-    margin: 0;
-    padding: 0;
+    scroll-behavior: smooth;
 }
 
 * {
-    color: var(--dark-font);
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-font);
+}
+
+header {
+    z-index: 2;
+}
+
+main {
+    z-index: 1;
 }
 
 img {
@@ -33,7 +36,7 @@ img {
 }
 
 .container {
-    margin: 1rem auto;
+    margin: 1rem ;
 }
 
 .filter-pink {
@@ -75,12 +78,13 @@ img {
 /* HAMBURGER ========== */
 /* ==================== */
 
+
 .nav-toggle {
     background: transparent;
     border: 0;
     cursor: pointer;
     position: absolute;
-    right: 0em;
+    right: 0;
     z-index: 1000;
     padding: 1.5rem 2rem;
 }
@@ -116,30 +120,26 @@ img {
 /* NAV-LIST =========== */
 /* ==================== */
 
-.nav-list-background {
-    width: 90%;
-    max-width: 400px;
-    background: white;
-    position: absolute;
-    right: 0;
-    transform: translateX(100%);
-    top: 0;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    transition: transform 300ms cubic-bezier(.5, 0, .5, 1);
-    z-index: 100;
-
-}
 
 .nav-list {
+    width: 90%;
+    max-width: 400px;
     flex-direction: column;
     list-style: none;
     text-align: center;
-    background: var(--transparent-pinkish);
+    background: #E4A0B2;
+    position: absolute;
+    z-index: 900;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+    transition: transform 300ms cubic-bezier(.5, 0, .5, 1);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     margin: 0;
-    padding: 6.5rem 0 .75rem 0;
+    padding: 2rem 0 .75rem 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .nav-item {
@@ -157,6 +157,7 @@ img {
 
 .nav-link-book {
     font-weight: 900;
+    color: var(--pinkish);
 }
 
 .active {
@@ -165,7 +166,7 @@ img {
     border-bottom: solid 1px var(--light-pink);
 }
 
-.nav-open .nav-list-background {
+.nav-open .nav-list {
     transform: translateX(0);
 }
 
@@ -372,10 +373,8 @@ footer {
     font-family: 'Dancing Script', cursive;
     border-bottom: solid 2px var(--pinkish);
     border-top: solid 2px var(--pinkish);
-    margin: 3rem 2rem 3rem 2rem;
+    margin: 4.5rem 2rem 2rem 2rem;
 }
-
-
 
 .service {
     font-size: 1.25rem;
@@ -401,20 +400,99 @@ footer {
     letter-spacing: 2px;
 }
 
-.waxing {
-    margin-bottom: 5rem;
+.container-waxing {
+    margin-bottom: 3rem;
+    min-width: 400px;
 }
 
 .waxing-list {
-    width: 90%;
     margin: 0;
     padding: 0;
 }
 
 .waxing-item {
-    width: 100%;
-    text-align: left;
+    text-align: center;
     list-style: none;
+    color: var(--dark-font);
+}
+
+.serv-nav-bottom {
+    margin-bottom: 1rem;
+}
+
+/* =============================================================================================================== */
+/* GALLERY ======================================================================================================= */
+/* =============================================================================================================== */
+
+
+.gallery-title {
+    font-size: 3.5rem;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: var(--pinkish);
+    border-top: solid 2px var(--pinkish);
+    border-bottom: solid 2px var(--pinkish);
+    margin: 2rem 4rem;
+
+}
+.container-main {
+    margin-top: 5rem;
+}
+
+.container-gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 150px 250px;
+    grid-gap: 5px;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.width-1 {
+    grid-column: span 1;
+}
+
+.width-2 {
+    grid-column: span 2;
+}
+
+.width-3 {
+    grid-column: span 3;
+}
+
+.width-4 {
+    grid-column: span 4;
+}
+
+.width-5 {
+    grid-column: span 5;
+}
+
+.width-6 {
+    grid-column: span 6;
+}
+
+.gallery-item .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery-item .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.gallery-item:hover .image img {
+    transform: scale(1.25)
 }
 
 

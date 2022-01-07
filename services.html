@@ -17,7 +17,7 @@
     <header>
         <nav class="nav-bar">
             <div class="nav-right">
-                <img src="images/mascara.png" alt="IMG" class="logo filter-pink">
+                <img src="images/icons/mascara.png" alt="IMG" class="logo filter-pink">
                 <p class="logo-txt">L B B</p>
             </div>
 
@@ -30,9 +30,8 @@
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">About</a></li>
                     <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Prices</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Reviews</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://business.facebook.com/laceysbeautybar/reviews/?ref=page_internal">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link nav-link-book" href="#">Book Now</a></li>
                     <li class="nav-item brand"><a class="nav-link brand-link" href="https://rb.gy/ywzrxu">Thread & Sew Clothing</a></li>
                 </ul>
@@ -44,20 +43,20 @@
 
         <nav class="services-nav">
             <ul class="services-list">
-                <li><a href="#" class="service-link">lashes</a></li>
-                <li><a href="#" class="service-link">eyebrows</a></li>
+                <li><a href="#lashes" class="service-link">lashes</a></li>
+                <li><a href="#brows" class="service-link">eyebrows</a></li>
             </ul>
             <ul class="services-list list-2">
-                <li><a href="#" class="service-link">face</a></li>
-                <li><a href="#" class="service-link">waxing</a></li>
+                <li><a href="#face" class="service-link">face</a></li>
+                <li><a href="#waxing" class="service-link">waxing</a></li>
             </ul>
         </nav>
 
-        <div class="container-services lashes">
+        <div class="container-services lashes" id="lashes">
 
             <div class="services-img-container">
                 <h2 class="title">lashes</h2>
-                <img src="images/eyelashes.jpg" alt="" class="services-img">
+                <img src="images/services-images/eyelashes.jpg" alt="" class="services-img">
             </div>
 
             <div class="container-service">
@@ -79,11 +78,11 @@
             </div>
         </div>
 
-        <div class="container-services brows">
+        <div class="container-services" id="brows">
 
             <div class="services-img-container">
                 <h2 class="title">Brows</h2>
-                <img src="images/brows.jpg" alt="" class="services-img">
+                <img src="images/services-images/brows.jpg" alt="" class="services-img">
             </div>
 
             <div class="container-service">
@@ -109,11 +108,11 @@
             </div>
         </div>
 
-        <div class="container-services face">
+        <div class="container-services" id="face">
 
             <div class="services-img-container">
                 <h2 class="title">face</h2>
-                <img src="images/facial.jpg" alt="" class="services-img">
+                <img src="images/services-images/facial.jpg" alt="" class="services-img">
             </div>
             
 
@@ -125,7 +124,7 @@
 
             <div class="container-service">
                 <h3 class="service">dermaplane</h3>
-                <p class="description">achieve an eve skin tone % texture by removing dead skin</p>
+                <p class="description">achieve an even skin tone & texture by removing dead skin</p>
                 <p class="price">$65</p>
             </div>
 
@@ -136,42 +135,58 @@
             </div>
         </div>
 
-        <div class="container-services waxing">
-           <h2 class="title">waxing</h2>
-           <ul class="waxing-list">
-               <li class="service waxing-item">chin: <span class="price">$5</span></li>
-               <li class="service waxing-item">upper / lower lip: <span class="price">$5</span></li>
-               <li class="service waxing-item">armpit: <span class="price">$5</span></li>
-               <li class="service waxing-item">full face: <span class="price">$5</span></li>
-               <li class="service waxing-item">bikini: <span class="price">$5</span></li>
-               <li class="service waxing-item">arms: <span class="price">$5</span></li>
-               <li class="service waxing-item">legs: <span class="price">$5</span></li>
-               <li class="service waxing-item">back: <span class="price">$5</span></li>
-               <li class="service waxing-item">chest: <span class="price">$5</span></li>
-           </ul>
+        <div class="container-services container-waxing" id="waxing">
+            <div class="container-service">
+                <h2 class="title">waxing</h2>
+            </div>
+
+            <div class="container-service">
+                <ul class="waxing-list">
+                    <li class="service waxing-item">chin: <span class="price">$5</span></li>
+                    <li class="service waxing-item">upper / lower lip: <span class="price">$5</span></li>
+                    <li class="service waxing-item">armpit: <span class="price">$5</span></li>
+                    <li class="service waxing-item">full face: <span class="price">$5</span></li>
+                    <li class="service waxing-item">bikini: <span class="price">$5</span></li>
+                    <li class="service waxing-item">arms: <span class="price">$5</span></li>
+                    <li class="service waxing-item">legs: <span class="price">$5</span></li>
+                    <li class="service waxing-item">back: <span class="price">$5</span></li>
+                    <li class="service waxing-item">chest: <span class="price">$5</span></li>
+                </ul>
+            </div>
         </div>
+
+        <nav class="services-nav serv-nav-bottom">
+            <ul class="services-list">
+                <li><a href="#lashes" class="service-link">lashes</a></li>
+                <li><a href="#brows" class="service-link">eyebrows</a></li>
+            </ul>
+            <ul class="services-list list-2">
+                <li><a href="#face" class="service-link">face</a></li>
+                <li><a href="#waxing" class="service-link">waxing</a></li>
+            </ul>
+        </nav>
     </main>
 
     <footer>
         <div class="footer-icons-container filter-pink">
             <a 
                 class="location-link" href="https://urlzs.com/S9QV6">
-                <img src="images/map-marker-alt-solid.svg" alt="location icon" 
+                <img src="images/icons/map-marker-alt-solid.svg" alt="location icon" 
                 class="footer-icon loc-icon">
             </a>
 
             <a href="tel:1-724-513-1415">
-                <img src="images/phone-solid.svg" alt="phone icon" 
+                <img src="images/icons/phone-solid.svg" alt="phone icon" 
                 class="footer-icon phone-icon filter-pink">
             </a>
 
             <a href="https://www.facebook.com/laceysbeautybar">
-                <img src="images/facebook-f-brands.svg" alt="facebook-icon" 
+                <img src="images/icons/facebook-f-brands.svg" alt="facebook-icon" 
                 class="footer-icon facebook-icon filter-pink">
             </a>
 
             <a href="https://www.instagram.com/laceysbeautybar/">
-                <img src="images/instagram-brands.svg" alt="instagram-icon" 
+                <img src="images/icons/instagram-brands.svg" alt="instagram-icon" 
                 class="footer-icon instagram-icon filter-pink">
             </a>
         </div>
