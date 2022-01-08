@@ -5,6 +5,7 @@
     --pinkish: #CE5374;
     --transparent-pinkish: rgb(206, 83, 116, .5);
     --goldish: #A19469;
+    --white: #FDFEFF;
 }
 
 html, body {
@@ -35,8 +36,9 @@ img {
     display: block;
 }
 
-.container {
-    margin: 1rem ;
+
+.separator {
+    margin: 1rem 0;
 }
 
 .filter-pink {
@@ -149,9 +151,15 @@ img {
 .nav-link {
     text-decoration: none;
     font-size: 1.5rem;
-    font-weight: 900;
+    font-weight: 300;
     letter-spacing: 2px;
     padding: 1rem 2rem;
+    color: var(--light-pink);
+    color: var(--white);
+}
+
+.nav-link:hover,
+.nav-link:focus {
     color: var(--light-pink);
 }
 
@@ -173,7 +181,7 @@ img {
 .nav-open .hamburger,
 .nav-open .hamburger::before,
 .nav-open .hamburger::after {
-    background: white;
+    background: var(--white);
     
 }
 
@@ -206,6 +214,12 @@ img {
     border-radius: 10px;;
 }
 
+.brand-link:hover,
+.brand-link:focus {
+    opacity: .8;
+    color: var(--transparent-pinkish)
+}
+
 /* ==================== */
 /* MAIN =============== */
 /* ==================== */
@@ -214,7 +228,7 @@ img {
     display: flex; 
     flex-direction: column; 
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 5rem;
 }
 
 /* =========================== */
@@ -227,16 +241,23 @@ img {
 /* =========================== */
 /* ADDRESS =================== */
 
+.container-address {
+    margin: 0;
+}
+
 .address-link {
-    font-size: 1rem;
+    font-size: .75rem;
     font-weight: 300;
     letter-spacing: 2px;
-    color: var(--dark-font);
     text-decoration: none;
 }
 
 /* =========================== */
 /* SLOGAN ==================== */
+
+.container-slogan {
+    margin-bottom: 2rem;
+}
 
 .slogan {
     font-size: 1.1rem;
@@ -268,7 +289,7 @@ img {
 /* SLOGAN ==================== */
 
 .btn-container {
-    margin: 2rem 0;
+    margin: 0 0 1rem 0;
 }
 
 .book-btn {
@@ -303,6 +324,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     align-self: flex-end;
+    margin-top: 3rem;
 }
 
 .footer-icon {
@@ -317,6 +339,135 @@ footer {
 .instagram-icon {
     width: 24px;
 }
+
+/* =============================================================================================================== */
+/* ABOUT ========================================================================================================= */
+/* =============================================================================================================== */
+
+
+.main {
+    position: relative;
+    z-index: 1;
+}
+
+.sudo-container {
+    position: relative;
+}
+
+.sudo-container::before {
+    content: "";
+    width: 3px;
+    height: 2000px;
+    background: var(--pinkish);
+    position: absolute;
+    top: 340px;
+    right: 50%;
+    z-index: -1
+}
+
+.container-owner-profile {
+    margin-top: 1rem;
+}
+
+.about-img-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.about-img {
+    width: 100%;
+    border-radius: 50%;
+    padding: 5px;
+    border: solid 2px var(--pinkish);
+}
+
+.container-about {
+    position: relative;
+}
+
+.about-copy {
+    width: 80%;
+    text-align: center;
+    font-weight: 300;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+    border-top: solid 2px var(--pinkish);
+    border-bottom: solid 2px var(--pinkish);
+    margin: 0 auto;
+    padding: 1rem 0;
+    position: relative;
+    background: var(--light-pink);
+
+}
+
+.container-carousel {
+    width: 100%;
+    position: relative;
+    margin: 3rem 0;
+    border-top: solid 2px var(--pinkish);
+    border-bottom: solid 2px var(--pinkish);
+    background: var(--light-pink);
+}
+
+.carousel-actions {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-btn {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 5px 18px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background: var(--dark-font);
+    opacity: .3;
+}
+
+.carousel-btn:hover {
+    cursor: pointer;
+}
+
+.carousel-prev {
+    margin-left: 1rem;
+}
+
+.carousel-next {
+    margin-right: 1rem;
+}
+
+.carousel-item {
+    display: none;
+}
+
+.carousel-item-prod {
+    display: none;
+}
+
+.carousel-item-display {
+    width: 100%;
+    display: block;
+}
+
+.shop-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+
+.container-about .products {
+    margin: 0 2rem 2rem 2rem;
+
+}
+
 
 /* =============================================================================================================== */
 /* SERVICES-PAGE ================================================================================================= */
@@ -345,7 +496,7 @@ footer {
     letter-spacing: 3px;
     text-transform: capitalize;
     text-decoration: none;
-    color: white;
+    color: var(--white);
     padding: 1rem;
 }
 
@@ -374,6 +525,7 @@ footer {
     border-bottom: solid 2px var(--pinkish);
     border-top: solid 2px var(--pinkish);
     margin: 4.5rem 2rem 2rem 2rem;
+    background: var(--light-pink);
 }
 
 .service {
@@ -413,7 +565,6 @@ footer {
 .waxing-item {
     text-align: center;
     list-style: none;
-    color: var(--dark-font);
 }
 
 .serv-nav-bottom {
