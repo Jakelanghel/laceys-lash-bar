@@ -7,7 +7,10 @@ const carouselBtnNext2 = document.querySelector(".carousel-next-2")
 const allProdSlides = document.querySelectorAll(".carousel-item")
 
 
+
 let slidePos = 0
+
+
 
 
 const nextSlide = (e) => {
@@ -33,14 +36,20 @@ const hideAllSlides = (e) => {
 
 const getBtnId = (e) => {
     const id = e.target.id
-    const isCarousel2 = typeof id[id.length -1] !== "int" ? false : true
+    const isCarousel2 = hasNumbers(id)
     const allSlides = !isCarousel2 ? document.querySelectorAll(".carousel-item")
                                     : document.querySelectorAll(".carousel-item-prod") 
     return allSlides
 }
 
+const hasNumbers = (str) => {
+    var regex = /\d/g;
+    return regex.test(str);
+}
+
 
 carouselBtnNext.addEventListener("click", nextSlide)
 carouselBtnPrev.addEventListener("click", prevSlide)
-carouselBtnPrev1.addEventListener("click", nextSlide)
-carouselBtnNext2.addEventListener("click", prevSlide)
+carouselBtnPrev1.addEventListener("click", prevSlide )
+carouselBtnNext2.addEventListener("click", nextSlide)
+

@@ -36,6 +36,10 @@ img {
     display: block;
 }
 
+.container {
+    margin: 2rem 0;
+}
+
 
 .separator {
     margin: 1rem 0;
@@ -209,9 +213,10 @@ img {
     background: var(--light-pink);
     font-size: 1rem;
     font-weight: 900;
-    letter-spacing: 3px;;
+    letter-spacing: 2px;
     color: var(--pinkish);
-    border-radius: 10px;;
+    border-radius: 10px;
+    margin: 0 10px;
 }
 
 .brand-link:hover,
@@ -241,10 +246,6 @@ img {
 /* =========================== */
 /* ADDRESS =================== */
 
-.container-address {
-    margin: 0;
-}
-
 .address-link {
     font-size: .75rem;
     font-weight: 300;
@@ -255,34 +256,11 @@ img {
 /* =========================== */
 /* SLOGAN ==================== */
 
-.container-slogan {
-    margin-bottom: 2rem;
-}
-
-.slogan {
-    font-size: 1.1rem;
+.slogan-list {
+    font-size: 1.15rem;;
     font-weight: 300;
-    line-height: 2.5rem;
-    letter-spacing: 3px;
     text-align: center;
-}
-
-.container .slogan  span {
-    font-family: 'Dancing Script', cursive;
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.hero-span-1 {
-    color: var(--blueish);
-}
-
-.hero-span-2 {
-    color: var(--pinkish);
-}
-
-.hero-span-3 {
-    color: var(--goldish);
+    list-style: none;
 }
 
 /* =========================== */
@@ -300,11 +278,37 @@ img {
     color: var(--pinkish);
     border: solid 2px var(--pinkish);
     border-radius: 5px;
-    padding: .5rem 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0 0 0;
 }
 
-.section-img {
-    max-width: 100%;
+.slogan-list {
+    letter-spacing: 3px;
+}
+
+.address {
+    font-size: .85rem;
+    margin-bottom: .5rem;
+    color: var(--goldish);
+}
+
+.slogan-item span {
+    font-size: 1.75rem;
+    font-weight: 500;
+    font-family: 'Dancing Script', cursive;
+}
+
+.slogan-span-1 {
+    color: var(--pinkish);
+
+}
+
+.slogan-span-2 {
+    color: var(--goldish);
+}
+
+.slogan-span-3 {
+    color: var(--blueish);
 }
 
 
@@ -324,7 +328,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     align-self: flex-end;
-    margin-top: 3rem;
+    /* margin-top: 1rem; */
 }
 
 .footer-icon {
@@ -357,7 +361,7 @@ footer {
 .sudo-container::before {
     content: "";
     width: 3px;
-    height: 2000px;
+    height: 2100px;
     background: var(--pinkish);
     position: absolute;
     top: 340px;
