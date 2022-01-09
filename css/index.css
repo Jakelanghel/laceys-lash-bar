@@ -37,7 +37,7 @@ img {
 }
 
 .container {
-    margin: 2rem 0;
+    margin: rem 0;
 }
 
 
@@ -69,6 +69,15 @@ img {
 
 .nav-right {
     margin-left: 1rem;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    cursor: pointer;
 }
 
 .logo {
@@ -261,14 +270,11 @@ img {
     font-weight: 300;
     text-align: center;
     list-style: none;
+    margin: 2rem 0;
 }
 
 /* =========================== */
 /* SLOGAN ==================== */
-
-.btn-container {
-    margin: 0 0 1rem 0;
-}
 
 .book-btn {
     font-size: 1.5rem;
@@ -279,11 +285,20 @@ img {
     border: solid 2px var(--pinkish);
     border-radius: 5px;
     padding: .75rem 1.5rem;
-    margin: 2rem 0 0 0;
+    margin-top: 2rem;
+}
+
+.book-btn:hover,
+.book-btn:focus {
+    cursor: pointer;
+    color: var(--transparent-pinkish);
+    border: solid 5px var(--transparent-pinkish);
+    font-weight: 900;
 }
 
 .slogan-list {
     letter-spacing: 3px;
+    margin: 1rem 0;
 }
 
 .address {
@@ -382,6 +397,7 @@ footer {
     width: 100%;
     border-radius: 50%;
     padding: 5px;
+    background: var(--light-pink);
     border: solid 2px var(--pinkish);
 }
 
@@ -401,6 +417,7 @@ footer {
     padding: 1rem 0;
     position: relative;
     background: var(--light-pink);
+    max-width: 500px;
 
 }
 
@@ -467,9 +484,8 @@ footer {
     margin: 1rem 0;
 }
 
-.container-about .products {
-    margin: 0 2rem 2rem 2rem;
-
+.footer-margin {
+    margin-top: 2rem;
 }
 
 
@@ -528,8 +544,9 @@ footer {
     font-family: 'Dancing Script', cursive;
     border-bottom: solid 2px var(--pinkish);
     border-top: solid 2px var(--pinkish);
-    margin: 4.5rem 2rem 2rem 2rem;
+    margin: 4.5rem auto 2rem auto;
     background: var(--light-pink);
+    max-width: 300px;
 }
 
 .service {
@@ -649,6 +666,60 @@ footer {
 .gallery-item:hover .image img {
     transform: scale(1.25)
 }
+
+/* ============================================================================================================= */
+/* TABLETS (portrait and landscape) ============================================================================ */
+/* ============================================================================================================= */
+
+ @media only screen 
+ and (min-device-width : 768px) 
+ and (max-device-width : 1024px) {
+  
+     .main-img {
+         width: 65%;
+         margin: 0 auto;
+     }
+
+     .book-btn {
+         margin-top: .5rem
+     }
+
+     .about-img {
+         width: 50%;
+         margin: 0 auto;
+     }
+
+     .shop-img {
+        width: 100%;
+        height: 800px;
+        object-fit: cover;
+        border-radius: 5px;
+        margin: 1rem 0;
+    }
+
+    .sudo-container::before {
+        height: 2800px;
+    }
+
+    .services-img {
+        border-radius: 10px;
+        width: 700px;
+    }
+
+    .container-gallery {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: 400px 600px;
+        grid-gap: 5px;
+    }
+ }
+
+/* ============================================================================================================= */
+/* LAPTOPS & DESKTOPS ============================================================================ */
+/* ============================================================================================================= */
+  @media only screen 
+  and (min-width : 1224px) {
+  }
 
 
 
