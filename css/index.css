@@ -1,7 +1,8 @@
 :root {
     --light-pink: #ffe6f2;
-    --dark-font: #252525;
+    --dark-font: rgb(37, 37, 37, .7);
     --blueish: #00AFF5;
+    --blueish: #63BB7D;
     --pinkish: #CE5374;
     --transparent-pinkish: rgb(206, 83, 116, .5);
     --goldish: #A19469;
@@ -253,16 +254,6 @@ img {
 }
 
 /* =========================== */
-/* ADDRESS =================== */
-
-.address-link {
-    font-size: .75rem;
-    font-weight: 300;
-    letter-spacing: 2px;
-    text-decoration: none;
-}
-
-/* =========================== */
 /* SLOGAN ==================== */
 
 .slogan-list {
@@ -275,6 +266,74 @@ img {
 
 /* =========================== */
 /* SLOGAN ==================== */
+
+.address-link {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-decoration: none;
+    margin: 0;
+
+}
+
+@media(min-width: 400px) {
+    .address-link {
+        font-size: 1.15rem;
+    
+    }
+}
+
+@media(min-height: 800px) {
+    .address-link {
+        margin-top: .5rem;
+    
+    }
+}
+
+
+.slogan-list {
+    letter-spacing: 3px;
+    margin: 1rem 0;
+}
+
+@media(min-height: 875px) {
+    .slogan-list {
+        margin: 1.75rem;
+    }
+}
+
+.slogan-item {
+    font-size: 1.75rem;
+    font-weight: 300;
+    margin-top: .5rem;
+    font-family: 'Dancing Script', cursive;
+    color: var(--dark-font);
+}
+
+@media(min-height: 800px) {
+    .slogan-item {
+        margin-top: 1rem;
+    }
+}
+
+.slogan-item span {
+    font-size: 1.75rem;
+    font-weight: 700;
+    font-family: 'Dancing Script', cursive;
+    opacity: 1;
+}
+
+.slogan-span-1 {
+    color: var(--pinkish);
+}
+
+.slogan-span-2 {
+    color: var(--goldish);
+}
+
+.slogan-span-3 {
+    color: var(--blueish);
+}
 
 .book-btn {
     font-size: 1.5rem;
@@ -296,34 +355,15 @@ img {
     font-weight: 900;
 }
 
-.slogan-list {
-    letter-spacing: 3px;
-    margin: 1rem 0;
-}
+@media(min-height: 925px) {
+    .slogan-item {
+        margin-top: 1.25rem;
+        letter-spacing: 4px;
+    }
 
-.address {
-    font-size: .85rem;
-    margin-bottom: .5rem;
-    color: var(--goldish);
-}
-
-.slogan-item span {
-    font-size: 1.75rem;
-    font-weight: 500;
-    font-family: 'Dancing Script', cursive;
-}
-
-.slogan-span-1 {
-    color: var(--pinkish);
-
-}
-
-.slogan-span-2 {
-    color: var(--goldish);
-}
-
-.slogan-span-3 {
-    color: var(--blueish);
+    .book-btn {
+        font-size: 1.75rem;
+    }
 }
 
 
@@ -376,7 +416,8 @@ footer {
 .sudo-container::before {
     content: "";
     width: 3px;
-    height: 2100px;
+    /* height: 2100px; */
+    height: 2800px;
     background: var(--pinkish);
     position: absolute;
     top: 340px;
@@ -406,7 +447,7 @@ footer {
 }
 
 .about-copy {
-    width: 80%;
+    width: 90%;
     text-align: center;
     font-weight: 300;
     line-height: 1.75rem;
@@ -448,7 +489,7 @@ footer {
     outline: none;
     border: none;
     background: var(--dark-font);
-    opacity: .3;
+    opacity: .5;
 }
 
 .carousel-btn:hover {
@@ -484,6 +525,13 @@ footer {
     margin: 1rem 0;
 }
 
+.shop-brand {
+    display: block;
+    font-size: 2.5rem;
+    font-family: inherit;
+    color: inherit;
+}
+
 .footer-margin {
     margin-top: 2rem;
 }
@@ -499,7 +547,8 @@ footer {
     background: var(--transparent-pinkish);
     padding: 1rem;
     margin-top: 2rem;
-    border-radius: 5px;;
+    border-radius: 5px;
+    
 }
 
 
@@ -517,7 +566,7 @@ footer {
     text-transform: capitalize;
     text-decoration: none;
     color: var(--white);
-    padding: 1rem;
+    padding: 1rem 2.5rem;
 }
 
 .list-2 {
@@ -526,6 +575,8 @@ footer {
 
 .container-service {
     text-align: center;
+    max-width: 450px;
+    margin: 0 auto;
 }
 
 .services-img {
@@ -550,12 +601,12 @@ footer {
 }
 
 .service {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: 2px;
     text-transform: capitalize;
     color: var(--pinkish);
-    margin: 2rem 0 0 0;
+    margin: 2.5rem 0 .5rem 0;
     padding: 0 1rem;
 }
 
@@ -584,8 +635,16 @@ footer {
 }
 
 .waxing-item {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
     list-style: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--dark-font);
+    margin: 1.5rem;
+    padding: 0 1rem;
+    border-bottom: solid 2px var(--dark-font);
 }
 
 .serv-nav-bottom {
