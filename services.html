@@ -1,196 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">     
-    <title>Lacey's Lash Bar Services</title>
-</head>
-<body>
-    <header>
-        <nav class="nav-bar">
-            <div class="nav-right">
-                <a href="index.html" class="logo-link">
-                    <img src="images/icons/mascara.png" alt="IMG" class="logo filter-pink">
-                    <span class="logo-txt">L B B</span>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/index.css" />
+        <title>Lacey's Lash Bar Services</title>
+    </head>
+    <body>
+        <header>
+            <nav class="nav-bar">
+                <div class="nav-right">
+                    <a href="index.html" class="logo-link">
+                        <img
+                            src="images/icons/mascara.png"
+                            alt="IMG"
+                            class="logo filter-pink"
+                        />
+                        <span class="logo-txt">L B B</span>
+                    </a>
+                </div>
+
+                <button class="nav-toggle" aria-label="toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="services.html"
+                            >Services</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://tinyurl.com/2p9h699n"
+                            >Reviews</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            class="nav-link nav-link-book"
+                            href="https://laceysbeautybar.booksy.com"
+                            >Book Now</a
+                        >
+                    </li>
+                    <li class="nav-item brand">
+                        <a
+                            class="nav-link brand-link"
+                            href="https://tinyurl.com/2p8vkjtm"
+                            >Thread & Sew Clothing</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <nav class="services-nav">
+                <ul class="services-list">
+                    <li>
+                        <a href="#lashes" class="service-link">Eyelashes</a>
+                    </li>
+                    <li><a href="#brows" class="service-link">Eyebrows</a></li>
+                </ul>
+                <ul class="services-list list-2">
+                    <li><a href="#face" class="service-link">Skin</a></li>
+                    <li><a href="#waxing" class="service-link">Waxing</a></li>
+                </ul>
+            </nav>
+
+            <div class="container-services lashes" id="lashes">
+                <div class="services-img-container">
+                    <h2 class="title">lashes</h2>
+                    <img
+                        src="images/services-images/eyelashes.jpg"
+                        alt=""
+                        class="services-img"
+                    />
+                </div>
+
+                <div class="container-service">
+                    <h3 class="service">full set of eyelash extensions</h3>
+                    <p class="description">
+                        classic, hybrid, volume, mega volume
+                    </p>
+                    <p class="price">$120 - $150</p>
+                </div>
+
+                <div class="container-service">
+                    <h3 class="service">eyelash refill</h3>
+                    <p class="description">needed every 2-3 weeks</p>
+                    <p class="price">$60 - $80</p>
+                </div>
+
+                <div class="container-service">
+                    <h3 class="service">eyelash lift and tint</h3>
+                    <p class="description">
+                        give your natural lashes the perfect curl
+                    </p>
+                    <p class="price">$70</p>
+                </div>
+            </div>
+
+            <div class="container-services" id="brows">
+                <div class="services-img-container">
+                    <h2 class="title">Brows</h2>
+                    <img
+                        src="images/services-images/brows.jpg"
+                        alt=""
+                        class="services-img"
+                    />
+                </div>
+
+                <div class="container-service">
+                    <h3 class="service">eyebrow lamination</h3>
+                    <p class="description">
+                        achieve the "brow gel" look for 3-6 weeks
+                    </p>
+                    <p class="price">$55</p>
+                </div>
+
+                <div class="container-service">
+                    <h3 class="service">eyebrow shaping</h3>
+                    <p class="description">wax / trim / pluck</p>
+                    <p class="price">$20</p>
+                </div>
+
+                <div class="container-service">
+                    <h3 class="service">eyebrow tint</h3>
+                    <p class="price">$15</p>
+                </div>
+
+                <div class="container-service">
+                    <h3 class="service">eyebrow henna</h3>
+                    <p class="price">$25</p>
+                </div>
+            </div>
+
+            <div class="container-services" id="face">
+                <div class="services-img-container">
+                    <h2 class="title">skin</h2>
+                    <img
+                        src="images/services-images/facial.jpg"
+                        alt=""
+                        class="services-img"
+                    />
+                </div>
+
+                <div class="container-service">
+                    <h3 class="service">1 hour facial with mini massage</h3>
+                    <p class="description">
+                        customize your facial with farmhouse fresh & Esthemax
+                        products
+                    </p>
+                    <p class="price">$70</p>
+                </div>
+
+                <div class="container-service">
+                    <h3 class="service">dermaplane</h3>
+                    <p class="description">
+                        achieve an even skin tone & texture by removing dead
+                        skin cells
+                    </p>
+                    <p class="price">$65</p>
+                </div>
+
+                <div class="container-service">
+                    <h3 class="service">"pick me up" facial</h3>
+                    <p class="description">30 min facial</p>
+                    <p class="price">$40</p>
+                </div>
+            </div>
+
+            <div class="container-services container-waxing" id="waxing">
+                <div class="container-service">
+                    <h2 class="title">waxing</h2>
+                </div>
+
+                <div class="container-service">
+                    <ul class="waxing-list">
+                        <li class="service waxing-item">
+                            chin: <span class="price">$5</span>
+                        </li>
+                        <li class="service waxing-item">
+                            upper / lower lip: <span class="price">$10</span>
+                        </li>
+                        <li class="service waxing-item">
+                            underarm: <span class="price">$40</span>
+                        </li>
+                        <li class="service waxing-item">
+                            full face: <span class="price">$40</span>
+                        </li>
+                        <li class="service waxing-item">
+                            bikini: <span class="price">$50</span>
+                        </li>
+                        <li class="service waxing-item">
+                            arms: <span class="price">$35</span>
+                        </li>
+                        <li class="service waxing-item">
+                            legs: <span class="price">$40</span>
+                        </li>
+                        <li class="service waxing-item">
+                            back: <span class="price">$30</span>
+                        </li>
+                        <li class="service waxing-item">
+                            chest: <span class="price">$30</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <nav class="services-nav serv-nav-bottom">
+                <ul class="services-list">
+                    <li><a href="#lashes" class="service-link">lashes</a></li>
+                    <li><a href="#brows" class="service-link">eyebrows</a></li>
+                </ul>
+                <ul class="services-list list-2">
+                    <li><a href="#face" class="service-link">face</a></li>
+                    <li><a href="#waxing" class="service-link">waxing</a></li>
+                </ul>
+            </nav>
+        </main>
+
+        <footer>
+            <div class="footer-icons-container filter-pink">
+                <a class="location-link" href="https://urlzs.com/S9QV6">
+                    <img
+                        src="images/icons/map-marker-alt-solid.svg"
+                        alt="location icon"
+                        class="footer-icon loc-icon"
+                    />
+                </a>
+
+                <a href="tel:1-724-513-1415">
+                    <img
+                        src="images/icons/phone-solid.svg"
+                        alt="phone icon"
+                        class="footer-icon phone-icon filter-pink"
+                    />
+                </a>
+
+                <a href="https://www.facebook.com/laceysbeautybar">
+                    <img
+                        src="images/icons/facebook-f-brands.svg"
+                        alt="facebook-icon"
+                        class="footer-icon facebook-icon filter-pink"
+                    />
+                </a>
+
+                <a href="https://www.instagram.com/laceysbeautybar/">
+                    <img
+                        src="images/icons/instagram-brands.svg"
+                        alt="instagram-icon"
+                        class="footer-icon instagram-icon filter-pink"
+                    />
                 </a>
             </div>
-
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://tinyurl.com/2p9h699n">Reviews</a></li>
-                <li class="nav-item"><a class="nav-link nav-link-book" href="https://laceysbeautybar.booksy.com">Book Now</a></li>
-                <li class="nav-item brand"><a class="nav-link brand-link" href="https://tinyurl.com/2p8vkjtm">Thread & Sew Clothing</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="main">
-
-        <nav class="services-nav">
-            <ul class="services-list">
-                <li><a href="#lashes" class="service-link">Eyelashes</a></li>
-                <li><a href="#brows" class="service-link">Eyebrows</a></li>
-            </ul>
-            <ul class="services-list list-2">
-                <li><a href="#face" class="service-link">Skin</a></li>
-                <li><a href="#waxing" class="service-link">Waxing</a></li>
-            </ul>
-        </nav>
-
-        <div class="container-services lashes" id="lashes">
-
-            <div class="services-img-container">
-                <h2 class="title">lashes</h2>
-                <img src="images/services-images/eyelashes.jpg" alt="" class="services-img">
-            </div>
-
-            <div class="container-service">
-                <h3 class="service">full set of eyelash extensions</h3>
-                <p class="description">classic, hybrid, volume, mega volume</p>
-                <p class="price">$120 - $150</p>
-            </div>
-
-            <div class="container-service">
-                <h3 class="service">eyelash refill</h3>
-                <p class="description">needed every 2-3 weeks</p>
-                <p class="price">$60 - $80</p>
-            </div>
-
-            <div class="container-service">
-                <h3 class="service">eyelash lift and tint</h3>
-                <p class="description">give your natural lashes the perfect curl</p>
-                <p class="price">$70</p>
-            </div>
-        </div>
-
-        <div class="container-services" id="brows">
-
-            <div class="services-img-container">
-                <h2 class="title">Brows</h2>
-                <img src="images/services-images/brows.jpg" alt="" class="services-img">
-            </div>
-
-            <div class="container-service">
-                <h3 class="service">eyebrow lamination</h3>
-                <p class="description">achieve the "brow gel" look for 3-6 weeks</p>
-                <p class="price">$55</p>
-            </div>
-
-            <div class="container-service">
-                <h3 class="service">eyebrow shaping</h3>
-                <p class="description">wax / trim / pluck</p>
-                <p class="price">$20</p>
-            </div>
-
-            <div class="container-service">
-                <h3 class="service">eyebrow tint</h3>
-                <p class="price">$15</p>
-            </div>
-
-            <div class="container-service">
-                <h3 class="service">eyebrow henna</h3>
-                <p class="price">$25</p>
-            </div>
-        </div>
-
-        <div class="container-services" id="face">
-
-            <div class="services-img-container">
-                <h2 class="title">face</h2>
-                <img src="images/services-images/facial.jpg" alt="" class="services-img">
-            </div>
-            
-
-            <div class="container-service">
-                <h3 class="service">1 hour facial with mini massage</h3>
-                <p class="description">customize you facial with farmhouse fresh & Esthemax products</p>
-                <p class="price">$65</p>
-            </div>
-
-            <div class="container-service">
-                <h3 class="service">dermaplane</h3>
-                <p class="description">achieve an even skin tone & texture by removing dead skin cells</p>
-                <p class="price">$65</p>
-            </div>
-
-            <div class="container-service">
-                <h3 class="service">"pick me up" facial</h3>
-                <p class="description">30 min facial</p>
-                <p class="price">$15</p>
-            </div>
-        </div>
-
-        <div class="container-services container-waxing" id="waxing">
-            <div class="container-service">
-                <h2 class="title">waxing</h2>
-            </div>
-
-            <div class="container-service">
-                <ul class="waxing-list">
-                    <li class="service waxing-item">chin: <span class="price">$5</span></li>
-                    <li class="service waxing-item">upper / lower lip: <span class="price">$10</span></li>
-                    <li class="service waxing-item">armpit: <span class="price">$40</span></li>
-                    <li class="service waxing-item">full face: <span class="price">$40</span></li>
-                    <li class="service waxing-item">bikini: <span class="price">$50</span></li>
-                    <li class="service waxing-item">arms: <span class="price">$35</span></li>
-                    <li class="service waxing-item">legs: <span class="price">$40</span></li>
-                    <li class="service waxing-item">back: <span class="price">$30</span></li>
-                    <li class="service waxing-item">chest: <span class="price">$30</span></li>
-                </ul>
-            </div>
-        </div>
-
-        <nav class="services-nav serv-nav-bottom">
-            <ul class="services-list">
-                <li><a href="#lashes" class="service-link">lashes</a></li>
-                <li><a href="#brows" class="service-link">eyebrows</a></li>
-            </ul>
-            <ul class="services-list list-2">
-                <li><a href="#face" class="service-link">face</a></li>
-                <li><a href="#waxing" class="service-link">waxing</a></li> 
-            </ul>
-        </nav>
-    </main>
-
-    <footer>
-        <div class="footer-icons-container filter-pink">
-            <a 
-                class="location-link" href="https://urlzs.com/S9QV6">
-                <img src="images/icons/map-marker-alt-solid.svg" alt="location icon" 
-                class="footer-icon loc-icon">
-            </a>
-
-            <a href="tel:1-724-513-1415">
-                <img src="images/icons/phone-solid.svg" alt="phone icon" 
-                class="footer-icon phone-icon filter-pink">
-            </a>
-
-            <a href="https://www.facebook.com/laceysbeautybar">
-                <img src="images/icons/facebook-f-brands.svg" alt="facebook-icon" 
-                class="footer-icon facebook-icon filter-pink">
-            </a>
-
-            <a href="https://www.instagram.com/laceysbeautybar/">
-                <img src="images/icons/instagram-brands.svg" alt="instagram-icon" 
-                class="footer-icon instagram-icon filter-pink">
-            </a>
-        </div>
-    </footer>
-    <script src="js/index.js"></script>
-</body>
+        </footer>
+        <script src="js/index.js"></script>
+    </body>
 </html>

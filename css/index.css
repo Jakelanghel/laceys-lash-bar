@@ -1,15 +1,16 @@
 :root {
     --light-pink: #ffe6f2;
-    --dark-font: rgb(37, 37, 37, .7);
-    --blueish: #00AFF5;
-    --blueish: #63BB7D;
-    --pinkish: #CE5374;
-    --transparent-pinkish: rgb(206, 83, 116, .5);
-    --goldish: #A19469;
-    --white: #FDFEFF;
+    --dark-font: rgb(37, 37, 37, 0.7);
+    --blueish: #00aff5;
+    --blueish: #63bb7d;
+    --pinkish: #ce5374;
+    --transparent-pinkish: rgb(206, 83, 116, 0.5);
+    --goldish: #a19469;
+    --white: #fdfeff;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -21,7 +22,7 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     color: var(--dark-font);
 }
 
@@ -41,19 +42,19 @@ img {
     margin: rem 0;
 }
 
-
 .separator {
     margin: 1rem 0;
 }
 
 .filter-pink {
-    filter: brightness(0) saturate(100%) invert(51%) sepia(24%) saturate(1698%) hue-rotate(298deg) brightness(84%) contrast(90%);
+    filter: brightness(0) saturate(100%) invert(51%) sepia(24%) saturate(1698%)
+        hue-rotate(298deg) brightness(84%) contrast(90%);
 }
 
 .filter-blue {
-    filter: brightness(0) saturate(100%) invert(57%) sepia(58%) saturate(5418%) hue-rotate(168deg) brightness(105%) contrast(104%);
+    filter: brightness(0) saturate(100%) invert(57%) sepia(58%) saturate(5418%)
+        hue-rotate(168deg) brightness(105%) contrast(104%);
 }
-
 
 /* ==================== */
 /* NAV ================ */
@@ -61,11 +62,10 @@ img {
 
 .nav-bar {
     width: 100%;
-    display: flex; 
+    display: flex;
     justify-content: space-between;
     position: fixed;
     padding: 1rem;
-
 }
 
 .nav-right {
@@ -86,14 +86,13 @@ img {
 }
 
 .logo-txt {
-    font-size: .85rem;
+    font-size: 0.85rem;
     letter-spacing: 2px;
     color: var(--pinkish);
 }
 
 /* HAMBURGER ========== */
 /* ==================== */
-
 
 .nav-toggle {
     background: transparent;
@@ -120,22 +119,23 @@ img {
     transition: transform 250ms ease-in-out;
 }
 
-
 .hamburger::before,
 .hamburger::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     right: 0;
 }
 
-.hamburger::before { top: 10px; }
-.hamburger::after { bottom: 10px; }
-
+.hamburger::before {
+    top: 10px;
+}
+.hamburger::after {
+    bottom: 10px;
+}
 
 /* NAV-LIST =========== */
 /* ==================== */
-
 
 .nav-list {
     width: 90%;
@@ -143,17 +143,17 @@ img {
     flex-direction: column;
     list-style: none;
     text-align: center;
-    background: #E4A0B2;
+    background: #e4a0b2;
     position: absolute;
     z-index: 900;
     right: 0;
     top: 0;
     transform: translateX(100%);
-    transition: transform 300ms cubic-bezier(.5, 0, .5, 1);
+    transition: transform 300ms cubic-bezier(0.5, 0, 0.5, 1);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     margin: 0;
-    padding: 2rem 0 .75rem 0;
+    padding: 2rem 0 0.75rem 0;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
@@ -184,7 +184,7 @@ img {
 
 .active {
     font-weight: 300;
-    opacity: .5;
+    opacity: 0.5;
     border-bottom: solid 1px var(--light-pink);
 }
 
@@ -196,7 +196,6 @@ img {
 .nav-open .hamburger::before,
 .nav-open .hamburger::after {
     background: var(--white);
-    
 }
 
 .nav-open .nav-toggle {
@@ -204,7 +203,7 @@ img {
 }
 
 .nav-open .hamburger {
-    transform: rotate(.625turn);
+    transform: rotate(0.625turn);
 }
 
 .nav-open .hamburger::before {
@@ -231,8 +230,8 @@ img {
 
 .brand-link:hover,
 .brand-link:focus {
-    opacity: .8;
-    color: var(--transparent-pinkish)
+    opacity: 0.8;
+    color: var(--transparent-pinkish);
 }
 
 /* ==================== */
@@ -240,8 +239,8 @@ img {
 /* ==================== */
 
 .main {
-    display: flex; 
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     align-items: center;
     margin-top: 5rem;
 }
@@ -257,7 +256,7 @@ img {
 /* SLOGAN ==================== */
 
 .slogan-list {
-    font-size: 1.15rem;;
+    font-size: 1.15rem;
     font-weight: 300;
     text-align: center;
     list-style: none;
@@ -273,30 +272,26 @@ img {
     letter-spacing: 2px;
     text-decoration: none;
     margin: 0;
-
 }
 
-@media(min-width: 400px) {
+@media (min-width: 400px) {
     .address-link {
         font-size: 1.15rem;
-    
     }
 }
 
-@media(min-height: 800px) {
+@media (min-height: 800px) {
     .address-link {
-        margin-top: .5rem;
-    
+        margin-top: 0.5rem;
     }
 }
-
 
 .slogan-list {
     letter-spacing: 3px;
     margin: 1rem 0;
 }
 
-@media(min-height: 875px) {
+@media (min-height: 875px) {
     .slogan-list {
         margin: 1.75rem;
     }
@@ -305,12 +300,12 @@ img {
 .slogan-item {
     font-size: 1.75rem;
     font-weight: 300;
-    margin-top: .5rem;
-    font-family: 'Dancing Script', cursive;
+    margin-top: 0.5rem;
+    font-family: "Dancing Script", cursive;
     color: var(--dark-font);
 }
 
-@media(min-height: 800px) {
+@media (min-height: 800px) {
     .slogan-item {
         margin-top: 1rem;
     }
@@ -319,7 +314,7 @@ img {
 .slogan-item span {
     font-size: 1.75rem;
     font-weight: 700;
-    font-family: 'Dancing Script', cursive;
+    font-family: "Dancing Script", cursive;
     opacity: 1;
 }
 
@@ -343,8 +338,7 @@ img {
     color: var(--pinkish);
     border: solid 2px var(--pinkish);
     border-radius: 5px;
-    padding: .75rem 1.5rem;
-    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
 }
 
 .book-btn:hover,
@@ -355,7 +349,7 @@ img {
     font-weight: 900;
 }
 
-@media(min-height: 925px) {
+@media (min-height: 925px) {
     .slogan-item {
         margin-top: 1.25rem;
         letter-spacing: 4px;
@@ -366,7 +360,6 @@ img {
     }
 }
 
-
 /* ==================== */
 /* FOOTER ============= */
 /* ==================== */
@@ -374,7 +367,6 @@ img {
 footer {
     margin-top: auto;
 }
-
 
 .footer-icons-container {
     width: 80%;
@@ -403,7 +395,6 @@ footer {
 /* ABOUT ========================================================================================================= */
 /* =============================================================================================================== */
 
-
 .main {
     position: relative;
     z-index: 1;
@@ -422,7 +413,7 @@ footer {
     position: absolute;
     top: 340px;
     right: 50%;
-    z-index: -1
+    z-index: -1;
 }
 
 .container-owner-profile {
@@ -459,7 +450,6 @@ footer {
     position: relative;
     background: var(--light-pink);
     max-width: 500px;
-
 }
 
 .container-carousel {
@@ -489,7 +479,7 @@ footer {
     outline: none;
     border: none;
     background: var(--dark-font);
-    opacity: .5;
+    opacity: 0.5;
 }
 
 .carousel-btn:hover {
@@ -536,11 +526,9 @@ footer {
     margin-top: 2rem;
 }
 
-
 /* =============================================================================================================== */
 /* SERVICES-PAGE ================================================================================================= */
 /* =============================================================================================================== */
-
 
 .services-nav {
     width: 100%;
@@ -548,9 +536,7 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
     border-radius: 5px;
-    
 }
-
 
 .services-list {
     display: flex;
@@ -592,7 +578,7 @@ footer {
     text-align: center;
     color: var(--pinkish);
     text-transform: capitalize;
-    font-family: 'Dancing Script', cursive;
+    font-family: "Dancing Script", cursive;
     border-bottom: solid 2px var(--pinkish);
     border-top: solid 2px var(--pinkish);
     margin: 4.5rem auto 2rem auto;
@@ -606,7 +592,7 @@ footer {
     letter-spacing: 2px;
     text-transform: capitalize;
     color: var(--pinkish);
-    margin: 2.5rem 0 .5rem 0;
+    margin: 2.5rem 0 0.5rem 0;
     padding: 0 1rem;
 }
 
@@ -614,7 +600,7 @@ footer {
     font-weight: 300;
     text-transform: capitalize;
     letter-spacing: 1px;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     padding: 0 1rem;
 }
 
@@ -655,16 +641,14 @@ footer {
 /* GALLERY ======================================================================================================= */
 /* =============================================================================================================== */
 
-
 .gallery-title {
     font-size: 3.5rem;
-    font-family: 'Dancing Script', cursive;
+    font-family: "Dancing Script", cursive;
     text-align: center;
     color: var(--pinkish);
     border-top: solid 2px var(--pinkish);
     border-bottom: solid 2px var(--pinkish);
     margin: 2rem 4rem;
-
 }
 .container-main {
     margin-top: 5rem;
@@ -719,36 +703,33 @@ footer {
     object-fit: cover;
     object-position: 50% 50%;
     cursor: pointer;
-    transition: .5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 .gallery-item:hover .image img {
-    transform: scale(1.25)
+    transform: scale(1.25);
 }
 
 /* ============================================================================================================= */
 /* TABLETS (portrait and landscape) ============================================================================ */
 /* ============================================================================================================= */
 
- @media only screen 
- and (min-device-width : 768px) 
- and (max-device-width : 1024px) {
-  
-     .main-img {
-         width: 65%;
-         margin: 0 auto;
-     }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .main-img {
+        width: 65%;
+        margin: 0 auto;
+    }
 
-     .book-btn {
-         margin-top: .5rem
-     }
+    .book-btn {
+        margin-top: 0.5rem;
+    }
 
-     .about-img {
-         width: 50%;
-         margin: 0 auto;
-     }
+    .about-img {
+        width: 50%;
+        margin: 0 auto;
+    }
 
-     .shop-img {
+    .shop-img {
         width: 100%;
         height: 800px;
         object-fit: cover;
@@ -771,18 +752,10 @@ footer {
         grid-auto-rows: 400px 600px;
         grid-gap: 5px;
     }
- }
+}
 
 /* ============================================================================================================= */
 /* LAPTOPS & DESKTOPS ============================================================================ */
 /* ============================================================================================================= */
-  @media only screen 
-  and (min-width : 1224px) {
-  }
-
-
-
-
-
-
-
+@media only screen and (min-width: 1224px) {
+}
